@@ -1,5 +1,14 @@
 -- USE DataWarehouse
 
+/*
+
+DDL SCRIPT: Create Bronze Table.
+
+SCRIPT PURPOSE:
+	This script creates tables in the bronze schema or drops existing tables if they already exist.
+	Run this script to redefine the DDl structure of bronze tables.
+*/
+
 EXEC bronze.load_bronze
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
