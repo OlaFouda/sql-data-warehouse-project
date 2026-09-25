@@ -59,3 +59,10 @@ Master data from the different source systems is integrated and standardized bef
 └── README.md
 ```
 
+
+## Credits
+
+This project was built by following 'Full Hands-On Data Engineering Project' by Data With Baraa, with the implementation serving as hands-on practice of SQL data warehousing, ETL, data quality, and dimensional modeling.
+
+
+
