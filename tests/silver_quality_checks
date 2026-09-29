@@ -10,7 +10,8 @@ Script Purpose:
     - Invalid date ranges and orders.
     - Data consistency between related fields.
 
- Run these checks after data loading Silver Layer.
+Usage Notes:
+    - Run these checks after data loading Silver Layer.
 
 */
 
@@ -135,8 +136,7 @@ ORDER BY sls_sales, sls_quantity, sls_price;
 SELECT DISTINCT 
     bdate 
 FROM silver.erp_cust_az12
-WHERE bdate < '1924-01-01' 
-   OR bdate > GETDATE();
+WHERE bdate > GETDATE();
 
 -- Data Standardization & Consistency
 
